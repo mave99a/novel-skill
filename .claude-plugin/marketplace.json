@@ -7,7 +7,7 @@
     {
       "name": "novel-creator",
       "source": {
-        "type": "github",
+        "source": "github",
         "repo": "mave99a/novel-skill"
       },
       "description": "Interactive novel creation with RPG-style storytelling and EPUB output",
