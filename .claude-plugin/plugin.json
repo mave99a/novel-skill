@@ -1,0 +1,26 @@
+{
+  "name": "novel-creator",
+  "description": "Interactive novel creation workflow combining RPG-style storytelling with professional EPUB ebook production. Transform story ideas into complete novels through a 5-phase workflow.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rob Mao"
+  },
+  "homepage": "https://github.com/mave99a/novel-skill",
+  "repository": "https://github.com/mave99a/novel-skill",
+  "license": "MIT",
+  "keywords": [
+    "novel",
+    "writing",
+    "creative-writing",
+    "epub",
+    "ebook",
+    "storytelling",
+    "rpg",
+    "interactive-fiction",
+    "chinese-novel"
+  ],
+  "category": "Writing",
+  "skills": {
+    "novel-creator": "./skills/novel-creator"
+  }
+}

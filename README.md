@@ -60,13 +60,23 @@ Auto-generate professional ebook with:
 - Python 3.7+
 - Claude Code CLI
 
-### Setup
+### Install from Marketplace
+```bash
+# Add the marketplace
+/plugin marketplace add mave99a/novel-skill
+
+# Install the plugin
+/plugin install novel-creator
+```
+
+### Manual Setup
 ```bash
 # Install required Python package
 pip install ebooklib
 
-# The skill is automatically available when placed in:
-# .claude/skills/novel-creator/
+# Clone and add as local plugin
+git clone https://github.com/mave99a/novel-skill.git
+/plugin add ./novel-skill
 ```
 
 ## Usage
@@ -112,14 +122,23 @@ Options:
 ## File Structure
 
 ```
-novel-creator/
+novel-skill/
+├── .claude-plugin/
+│   ├── plugin.json        # Plugin manifest for Claude Code
+│   └── marketplace.json   # Marketplace catalog
+├── skills/
+│   └── novel-creator/
+│       ├── SKILL.md       # Skill definition
+│       ├── scripts/
+│       │   └── create_epub.py
+│       └── references/
+│           ├── personas.md
+│           └── poetry_pairs.md
+├── samples/               # Example novel outputs
 ├── README.md              # This file
-├── skill.md               # Skill definition for Claude Code
-├── scripts/
-│   └── create_epub.py     # EPUB generation script
-└── references/
-    ├── personas.md        # Character templates by setting
-    └── poetry_pairs.md    # Poetry and lyrics pairings
+├── LICENSE                # MIT License
+├── CHANGELOG.md           # Version history
+└── requirements.txt       # Python dependencies
 ```
 
 ## Output Structure

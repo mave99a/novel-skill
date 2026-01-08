@@ -1,0 +1,16 @@
+{
+  "name": "novel-skill-marketplace",
+  "owner": {
+    "name": "Rob Mao"
+  },
+  "plugins": [
+    {
+      "name": "novel-creator",
+      "source": "..",
+      "description": "Interactive novel creation with RPG-style storytelling and EPUB output",
+      "version": "1.0.0",
+      "category": "Writing",
+      "tags": ["novel", "writing", "epub", "creative", "chinese"]
+    }
+  ]
+}

@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for multiple genres: 穿越 (time-travel), Fantasy, Romance, Mystery
 - Customizable writing styles (琼瑶, 张爱玲, 金庸)
 - Sample novels demonstrating full workflow output
+- Claude Code marketplace support with `.claude-plugin/` configuration
+- Plugin manifest (`plugin.json`) and marketplace catalog (`marketplace.json`)
 
 ### Resources
 - `create_epub.py` - EPUB generator script with cover page and TOC
