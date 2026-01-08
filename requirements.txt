@@ -1,0 +1,4 @@
+# Novel Creator - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+ebooklib>=0.18

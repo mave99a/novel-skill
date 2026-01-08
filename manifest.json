@@ -1,0 +1,100 @@
+{
+  "$schema": "https://claude.ai/schemas/skill-manifest-v1.json",
+  "name": "novel-creator",
+  "version": "1.0.0",
+  "displayName": "Novel Creator",
+  "description": "Interactive novel creation workflow combining RPG-style storytelling with professional EPUB ebook production. Transform story ideas into complete novels through a 5-phase workflow: concept, interactive RPG, writing plan, chapters, and EPUB generation.",
+  "author": {
+    "name": "Rob Mao"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mave99a/novel-skill"
+  },
+  "keywords": [
+    "novel",
+    "writing",
+    "creative-writing",
+    "epub",
+    "ebook",
+    "storytelling",
+    "rpg",
+    "interactive-fiction",
+    "chinese-novel",
+    "web-novel"
+  ],
+  "categories": [
+    "Writing",
+    "Creative",
+    "Productivity"
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "triggers": [
+    "write a novel",
+    "create a story",
+    "interactive fiction",
+    "RPG story",
+    "make an ebook",
+    "穿越小说",
+    "写小说",
+    "创作故事",
+    "制作电子书"
+  ],
+  "skillFile": "novel-creator/SKILL.md",
+  "dependencies": {
+    "python": ">=3.7",
+    "packages": {
+      "ebooklib": ">=0.18"
+    }
+  },
+  "tools": [
+    "AskUserQuestion",
+    "Write",
+    "Read",
+    "Bash",
+    "TodoWrite"
+  ],
+  "resources": [
+    {
+      "path": "novel-creator/scripts/create_epub.py",
+      "description": "EPUB generation script"
+    },
+    {
+      "path": "novel-creator/references/personas.md",
+      "description": "Character templates by setting"
+    },
+    {
+      "path": "novel-creator/references/poetry_pairs.md",
+      "description": "Poetry and lyrics pairings for Chinese novels"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "file",
+      "pattern": "*.epub",
+      "description": "Generated EPUB ebook"
+    },
+    {
+      "type": "file",
+      "pattern": "*.md",
+      "description": "Chapter markdown files"
+    },
+    {
+      "type": "file",
+      "pattern": "task_plan.md",
+      "description": "Writing plan document"
+    }
+  ],
+  "features": [
+    "Interactive story building with RPG-style choices",
+    "5-phase structured writing workflow",
+    "Professional EPUB generation",
+    "Chinese novel optimization with poetry pairings",
+    "Customizable writing styles and genres"
+  ],
+  "minClaudeCodeVersion": "1.0.0"
+}
