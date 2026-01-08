@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "novel-creator",
-      "source": "..",
+      "source": {
+        "type": "github",
+        "repo": "mave99a/novel-skill"
+      },
       "description": "Interactive novel creation with RPG-style storytelling and EPUB output",
       "version": "1.0.0",
       "category": "Writing",
